@@ -313,49 +313,29 @@
       border-color: var(--secondary-font-color);
     }
   }
-  .location__map {
-    margin-bottom: 24px;
 
+  // location
+
+  .location__map {
+    margin-bottom: 32px;
   }
 
   .location__point {
-    width: 224px;
-    height: 199px;
-
-    border-radius: 10px;
+    width: 448px;
+    height: 260px;
   }
 
   .location__modal {
-    padding: 28px;
-    width: 280px;
-    min-height: 365px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    background-color: rgba(252, 252, 252, 1);
-    background: #fcfcfc;
-    border: 2px solid #f8d24e;
-    border-radius: 10px;
-
-    transform: translate(-50%, -50%);
+    padding: 32px 60px;
+    width: 568px;
+    min-height: 458px;
   }
 
   .location__close-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 16px;
-    height: 16px;
-
-    cursor: pointer;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 1px transparent;
-    padding: 0px;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
   }
 
   .location__modal-close {
@@ -367,13 +347,9 @@
   }
 
   .location__title {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 
-    font-family: 'Seymour One', sans-serif;
-    color: rgba(19, 19, 19, 1);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.4;
   }
 }

@@ -69,6 +69,8 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+  width: 134px;
+  height: 42px;
 
   font-family: 'Montserrat', sans-serif;
   background: #f8d24e;
@@ -78,21 +80,18 @@
 
   border: none;
   cursor: pointer;
-
-  width: 134px;
-  height: 42px;
 }
 
 @media screen and (min-width: 768px) {
   .franchise__btn_submit {
-    font-size: 14px;
-
     width: 121px;
+
+    font-size: 14px;
   }
 
   .location__btn_submit {
-    font-size: 14px;
-
     width: 145px;
+
+    font-size: 14px;
   }
 }

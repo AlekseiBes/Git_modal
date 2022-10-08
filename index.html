@@ -36,9 +36,41 @@
             </button>
           </li>
           <li>
-            <button type="button" class="read__button" data-modal-open>Read more</button>
+            <button type="button" class="read__button" read-modal-open>Read more</button>
           </li>
         </ul>
+      </section>
+
+      <!-- How it’s made? window -->
+
+      <section class="section">
+        <div class="container">
+          <div class="backdrop is-hidden" read-modal>
+            <div class="read__modal">
+              <button type="button" class="read__close-btn" read-modal-close>
+                <svg aria-label="" width="18" height="18" class="read__modal-close">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <h2 class="read__title">How it’s made?</h2>
+              <div class="read__video">
+                <iframe
+                  class="read__point"
+                  src="https://www.youtube.com/embed/8WEMZ86Eho8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="read__text">
+                We use a liquid nitrogen process to freeze the cream. After the scratch ice cream
+                base has steeped in its flavor for 24 hours in our walk-in refrigerator, we pour it
+                into our mixer.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- location window -->
@@ -53,7 +85,6 @@
                 </svg>
               </button>
 
-              <!-- form -->
               <h2 class="location__title">Our Locations</h2>
               <div class="location__map">
                 <iframe
@@ -152,32 +183,6 @@
     </main>
 
     <!-- Футер -->
-
-    <footer class="footer-page">
-      <div class="container footer-block">
-        <!-- Форма -->
-
-        <div class="footer__form">
-          <p class="footer__text_email footer__text">Підпишіться на розсилку</p>
-          <form class="footer__email_form">
-            <label class="footer__email_field">
-              <input
-                type="email"
-                name="email"
-                class="footer__email_input"
-                placeholder="E-mail"
-                required
-            /></label>
-            <button type="submit" class="footer__button">
-              Підписатися
-              <svg class="footer__btn_icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </footer>
 
     <!-- Модальне вікно -->
     <script src="./js/modal-read.js"></script>

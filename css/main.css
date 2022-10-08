@@ -689,16 +689,6 @@ img {
   fill: var(--secondary-font-color);
 }
 
-.location__map {
-  margin-bottom: 24px;
-}
-
-.location__point {
-  width: 224px;
-  height: 199px;
-  border-radius: 10px;
-}
-
 .location__modal {
   padding: 28px;
   width: 280px;
@@ -744,6 +734,81 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.location__map {
+  margin-bottom: 24px;
+}
+
+.location__point {
+  width: 224px;
+  height: 199px;
+  border-radius: 10px;
+}
+
+.read__modal {
+  padding: 28px;
+  width: 280px;
+  min-height: 459px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(252, 252, 252);
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.read__close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px transparent;
+  padding: 0px;
+}
+
+.read__modal-close {
+  transition: fill var(--animation);
+}
+.read__close-btn:hover .read__modal-close {
+  fill: var(--secondary-font-color);
+}
+
+.read__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Seymour One", sans-serif;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.read__video {
+  margin-bottom: 20px;
+}
+
+.read__point {
+  width: 224px;
+  height: 199px;
+  border-radius: 10px;
+}
+
+.read__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  color: rgb(19, 19, 19);
 }
 
 @media screen and (min-width: 768px) {
@@ -838,6 +903,40 @@ img {
     font-size: 20px;
     line-height: 1.4;
   }
+  .read__modal {
+    padding: 32px 60px;
+    width: 568px;
+    min-height: 449px;
+    position: absolute;
+  }
+  .read__close-btn {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .read__modal-close {
+    transition: fill var(--animation);
+  }
+  .read__close-btn:hover .read__modal-close {
+    fill: var(--secondary-font-color);
+  }
+  .read__title {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .read__video {
+    margin-bottom: 32px;
+  }
+  .read__point {
+    width: 448px;
+    height: 205px;
+  }
+  .read__text {
+    font-size: 16px;
+    line-height: 1.37;
+  }
 }
 .franchise__button {
   font-family: "Seymour One", sans-serif;
@@ -900,6 +999,22 @@ img {
 }
 
 .location__btn_submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 134px;
+  height: 42px;
+  font-family: "Montserrat", sans-serif;
+  background: #f8d24e;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.21;
+  border: none;
+  cursor: pointer;
+}
+
+.read__btn_submit {
   display: block;
   margin-left: auto;
   margin-right: auto;

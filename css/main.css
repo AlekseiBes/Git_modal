@@ -560,22 +560,22 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   background-color: rgb(252, 252, 252);
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  transform: translate(-50%, -50%);
 }
 
 .franchise__close-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
   cursor: pointer;
   background-color: transparent;
   border-radius: 50%;
@@ -598,6 +598,7 @@ img {
 .franchise__title {
   margin-bottom: 20px;
   max-width: 221px;
+  font-family: "Seymour One", sans-serif;
   color: rgb(19, 19, 19);
   font-weight: 400;
   font-size: 16px;
@@ -607,6 +608,7 @@ img {
 .franchise__text {
   margin-bottom: 24px;
   max-width: 240px;
+  font-family: "Montserrat", sans-serif;
   color: rgb(19, 19, 19);
   font-weight: 400;
   font-size: 14px;
@@ -626,6 +628,7 @@ img {
   border-color: var(--secondary-font-color);
 }
 .franchise__input::placeholder {
+  font-family: "Montserrat", sans-serif;
   font-size: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -656,10 +659,91 @@ img {
   border-color: var(--secondary-font-color);
 }
 .franchise__input_user::placeholder {
+  font-family: "Montserrat", sans-serif;
   font-size: 400;
   font-size: 12px;
   line-height: 1.17;
   color: rgb(19, 19, 19);
+}
+
+.franchise__close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px transparent;
+  padding: 0px;
+}
+
+.franchise__modal-close {
+  transition: fill var(--animation);
+}
+.franchise__close-btn:hover .franchise__modal-close {
+  fill: var(--secondary-font-color);
+}
+
+.location__map {
+  margin-bottom: 24px;
+}
+
+.location__point {
+  width: 224px;
+  height: 199px;
+  border-radius: 10px;
+}
+
+.location__modal {
+  padding: 28px;
+  width: 280px;
+  min-height: 365px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(252, 252, 252);
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.location__close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px transparent;
+  padding: 0px;
+}
+
+.location__modal-close {
+  transition: fill var(--animation);
+}
+.location__close-btn:hover .location__modal-close {
+  fill: var(--secondary-font-color);
+}
+
+.location__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Seymour One", sans-serif;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -671,6 +755,8 @@ img {
   .franchise__close-btn {
     top: 20px;
     right: 20px;
+    width: 20px;
+    height: 20px;
   }
   .franchise__title {
     margin-bottom: 24px;
@@ -703,9 +789,6 @@ img {
     border: 1px solid #84a178;
     border-radius: 10px;
   }
-  .franchise__input:hover, .franchise__input:focus {
-    border-color: var(--secondary-font-color);
-  }
   .franchise__modal_form {
     display: flex;
     flex-direction: column;
@@ -726,8 +809,61 @@ img {
     outline: none;
     border-color: var(--secondary-font-color);
   }
+  .location__map {
+    margin-bottom: 24px;
+  }
+  .location__point {
+    width: 224px;
+    height: 199px;
+    border-radius: 10px;
+  }
+  .location__modal {
+    padding: 28px;
+    width: 280px;
+    min-height: 365px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(252, 252, 252);
+    background: #fcfcfc;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+  }
+  .location__close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px transparent;
+    padding: 0px;
+  }
+  .location__modal-close {
+    transition: fill var(--animation);
+  }
+  .location__close-btn:hover .location__modal-close {
+    fill: var(--secondary-font-color);
+  }
+  .location__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Seymour One", sans-serif;
+    color: rgb(19, 19, 19);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 .franchise__button {
+  font-family: "Seymour One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #f8d24e;
   border-radius: 10px;
   font-weight: 600;
@@ -772,12 +908,12 @@ img {
 .franchise__btn_submit {
   margin-left: auto;
   margin-right: auto;
-  background: #f8d24e;
   border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  background: #f8d24e;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.21;
-  border-radius: 10px;
   border: none;
   cursor: pointer;
   display: inline-block;
@@ -785,13 +921,30 @@ img {
   height: 42px;
 }
 
+.location__btn_submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  background: #f8d24e;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.21;
+  border: none;
+  cursor: pointer;
+  width: 134px;
+  height: 42px;
+}
+
 @media screen and (min-width: 768px) {
   .franchise__btn_submit {
-    background: #f8d24e;
-    border-radius: 10px;
     font-size: 14px;
     width: 121px;
-    height: 42px;
+  }
+  .location__btn_submit {
+    font-size: 14px;
+    width: 145px;
   }
 }
 @media screen and (max-width: 768px) {

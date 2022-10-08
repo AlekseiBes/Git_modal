@@ -652,6 +652,25 @@ img {
   color: var(--primari-buckground-color);
 }
 
+.ice__btn_submit {
+  background: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.21;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  width: 114px;
+  height: 42px;
+  transition: background-color var(--animation);
+}
+.ice__btn_submit:hover, .ice__btn_submit:focus {
+  background-color: rgb(24, 140, 232);
+  color: var(--primari-buckground-color);
+}
+
 @media screen and (max-width: 768px) {
   .header__nav {
     display: none;

@@ -16,3 +16,9 @@
     opacity: 0;
     pointer-events: none;
   }
+
+  .franchise__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }

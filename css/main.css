@@ -596,18 +596,17 @@ img {
 }
 
 .franchise__button {
-  background-color: var(--secondary-font-color);
-  color: var(--primari-buckground-color);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  border-radius: 4px;
+  background: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.21;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   display: inline-block;
-  width: 200px;
-  height: 50px;
+  width: 114px;
+  height: 42px;
   transition: background-color var(--animation);
 }
 .franchise__button:hover, .franchise__button:focus {
@@ -616,18 +615,17 @@ img {
 }
 
 .read__button {
-  background-color: var(--secondary-font-color);
-  color: var(--primari-buckground-color);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  border-radius: 4px;
+  background: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.21;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   display: inline-block;
-  width: 200px;
-  height: 50px;
+  width: 114px;
+  height: 42px;
   transition: background-color var(--animation);
 }
 .read__button:hover, .read__button:focus {
@@ -636,18 +634,17 @@ img {
 }
 
 .location__button {
-  background-color: var(--secondary-font-color);
-  color: var(--primari-buckground-color);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  border-radius: 4px;
+  background: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.21;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   display: inline-block;
-  width: 200px;
-  height: 50px;
+  width: 114px;
+  height: 42px;
   transition: background-color var(--animation);
 }
 .location__button:hover, .location__button:focus {

@@ -24,25 +24,26 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   background-color: rgba(252, 252, 252, 1);
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+
+  transform: translate(-50%, -50%);
 }
 
 .franchise__close-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
   width: 20px;
   height: 20px;
+  
   cursor: pointer;
-
   background-color: transparent;
   border-radius: 50%;
   border: 1px transparent;
@@ -63,9 +64,11 @@
 }
 
 .franchise__title {
+
   margin-bottom: 20px;
   max-width: 221px;
 
+  font-family: 'Seymour One', sans-serif;
   color: rgba(19, 19, 19, 1);
   font-weight: 400;
   font-size: 16px;
@@ -76,6 +79,7 @@
   margin-bottom: 24px;
   max-width: 240px;
 
+  font-family: 'Montserrat', sans-serif;
   color: rgba(19, 19, 19, 1);
   font-weight: 400;
   font-size: 14px;
@@ -98,6 +102,7 @@
   }
 
   &::placeholder {
+    font-family: 'Montserrat', sans-serif;
     font-size: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -133,6 +138,7 @@
   }
 
   &::placeholder {
+    font-family: 'Montserrat', sans-serif;
     font-size: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -158,6 +164,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
 
     font-size: 20px;
     line-height: 1.4;
@@ -192,10 +199,7 @@
     border: 1px solid #84a178;
     border-radius: 10px;
 
-    &:hover,
-    &:focus {
-      border-color: var(--secondary-font-color);
-    }
+
   }
 
   .franchise__modal_form {

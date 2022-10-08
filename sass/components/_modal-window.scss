@@ -35,14 +35,6 @@
   }
 }
 
-.modal-close {
-  transition: fill var(--animation);
-
-  .close-btn:hover & {
-    fill: var(--secondary-font-color);
-  }
-}
-
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;

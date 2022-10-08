@@ -201,13 +201,6 @@ img {
   fill: var(--secondary-font-color);
 }
 
-.modal-close {
-  transition: fill var(--animation);
-}
-.close-btn:hover .modal-close {
-  fill: var(--secondary-font-color);
-}
-
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
@@ -536,63 +529,135 @@ img {
     padding-left: 0%;
   }
 }
-.ice__flex {
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: opacity var(--animation), visibility var(--animation);
+  overflow: scroll;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.franchise__modal_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.franchise__modal {
+  padding: 28px;
+  width: 280px;
+  min-height: 674px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(252, 252, 252);
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+
+.franchise__close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px transparent;
+  padding: 0px;
+}
+
+.franchise__modal-close {
+  transition: fill var(--animation);
+}
+.franchise__close-btn:hover .franchise__modal-close {
+  fill: var(--secondary-font-color);
+}
+
+.franchise__flex {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.ice__title {
+.franchise__title {
+  margin-bottom: 20px;
   color: rgb(19, 19, 19);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.ice__text {
+.franchise__text {
+  margin-bottom: 24px;
   color: rgb(19, 19, 19);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.35;
 }
 
-.ice__input {
+.franchise__input {
   display: flex;
   height: 32px;
   width: 100%;
+  padding: 8px 12px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
 }
-.ice__input:hover, .ice__input:focus {
+.franchise__input:hover, .franchise__input:focus {
   border-color: var(--secondary-font-color);
 }
-.ice__input::placeholder {
+.franchise__input::placeholder {
+  font-size: 400;
   font-size: 12px;
   line-height: 1.17;
-  color: rgba(117, 117, 117, 0.5);
+  color: rgb(19, 19, 19);
 }
 
-.ice__input_user {
+.franchise__text_form {
+  margin-bottom: 12px;
+}
+
+.franchise__comment_form {
+  margin-bottom: 24px;
+}
+
+.franchise__input_user {
   display: flex;
   width: 100%;
   height: 64px;
+  padding: 8px 12px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
   resize: none;
   outline: transparent;
-  padding: 12px 16px;
-  transition: border-color var(--animation);
 }
-.ice__input_user:hover, .ice__input_user:focus {
+.franchise__input_user:hover, .franchise__input_user:focus {
   outline: none;
   border-color: var(--secondary-font-color);
 }
-.ice__input_user::placeholder {
+.franchise__input_user::placeholder {
+  font-size: 400;
   font-size: 12px;
   line-height: 1.17;
-  color: rgba(117, 117, 117, 0.5);
+  color: rgb(19, 19, 19);
 }
 
 .franchise__button {
@@ -607,11 +672,6 @@ img {
   display: inline-block;
   width: 114px;
   height: 42px;
-  transition: background-color var(--animation);
-}
-.franchise__button:hover, .franchise__button:focus {
-  background-color: rgb(24, 140, 232);
-  color: var(--primari-buckground-color);
 }
 
 .read__button {
@@ -626,11 +686,6 @@ img {
   display: inline-block;
   width: 114px;
   height: 42px;
-  transition: background-color var(--animation);
-}
-.read__button:hover, .read__button:focus {
-  background-color: rgb(24, 140, 232);
-  color: var(--primari-buckground-color);
 }
 
 .location__button {
@@ -645,14 +700,11 @@ img {
   display: inline-block;
   width: 114px;
   height: 42px;
-  transition: background-color var(--animation);
-}
-.location__button:hover, .location__button:focus {
-  background-color: rgb(24, 140, 232);
-  color: var(--primari-buckground-color);
 }
 
-.ice__btn_submit {
+.franchise__btn_submit {
+  margin-left: auto;
+  margin-right: auto;
   background: #f8d24e;
   border-radius: 10px;
   font-weight: 600;
@@ -664,11 +716,6 @@ img {
   display: inline-block;
   width: 114px;
   height: 42px;
-  transition: background-color var(--animation);
-}
-.ice__btn_submit:hover, .ice__btn_submit:focus {
-  background-color: rgb(24, 140, 232);
-  color: var(--primari-buckground-color);
 }
 
 @media screen and (max-width: 768px) {

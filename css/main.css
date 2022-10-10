@@ -806,6 +806,7 @@ img {
   .location__point {
     width: 448px;
     height: 260px;
+    background-color: aliceblue;
   }
   .read__video {
     margin-bottom: 32px;
